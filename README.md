@@ -1,7 +1,7 @@
 # agentic-ml-recommender-system
 
 Docker Link:- https://hub.docker.com/r/arjunpatel89806/agentic-recommender
-
+Some files on github are missing because there size was large
 Agentic ML Recommender System — an autonomous, multi-agent machine learning system that trains, evaluates, critiques, and governs recommendation models using LangGraph and production-grade ML workflows.
 
 An end-to-end **agent-driven machine learning system** that autonomously trains, evaluates, governs, and explains a recommendation model using a structured multi-agent workflow.
@@ -58,7 +58,7 @@ pip install -r requirements.txt
 ```
 4. Run the agentic pipeline:
 ```bash
-python experiments/run_agentic_graph.py
+python -m experiments/run_agentic_graph.py
 ```
 
 Output will display hyperparameter exploration, training progress, evaluation metrics, and explanations.
