@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  agentic-recommender:
+    build: .
+    container_name: agentic-recommender
+    volumes:
+      - ./mlruns:/app/mlruns
+      - ./data:/app/data
+    environment:
+      - OPENBLAS_NUM_THREADS=1
+      - OMP_NUM_THREADS=1
+      - MKL_NUM_THREADS=1
+      - MLFLOW_TRACKING_URI=file:/app/mlruns
+    command: python experiments/run_agentic_graph.py
